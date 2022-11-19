@@ -1,4 +1,5 @@
 import java.io.Console;
+import java.util.Scanner;
 
 /**
  * Assignment 1 - Guessing Game
@@ -48,7 +49,6 @@ public class Guesser {
         "to guess the number.");
     System.out.println("Please answer T for true, and F for false.\n");
   }
-
   /*
    * Task 3. Complete the code for the getReply() method.
    * In the current version below, it returns null each
@@ -65,6 +65,12 @@ public class Guesser {
     // As long as it is not a valid reply (one of "T" and "F")
     // write an error message, and read a new reply.
     // When you have gotten a valid reply, return it.
+    reply = System.console().readLine();
+
+    while (!reply.equals("T") && !reply.equals("F")) {
+      System.out.println("please answer T or F");
+      reply = System.console().readLine();
+    }
     return reply;
   }
 
