@@ -1,0 +1,14 @@
+- När använder man add respektive commit?
+git add (stage all the file)
+git commit -m “”( committed the files to the repository)
+
+- Vad är pull repektive push?
+git push （changes from local repository to remote/githup repository)
+git pull  (changes from remote/githup repository to local repository  )
+
+- När använder man log respektive status?
+git log（vissa alla commit）
+git status (vilken brach vi stå nu/addera/commit)
+
+- Hur kan man formulera sig i sina commit-meddelanden?
+commit-meddelander should describe the situation about what have happend.
